@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Exemplo de JavaScript</title>
+<script>
+document.write("<b>Exemplo 01: Uso de variáveis</b><br><br>");
+// variáveis
+var variavel01 = 'Este é um ';
+var variavel02 = 'exemplo!<br><br>'; 
+// concatenação
+var texto = variavel01 + variavel02;
+// imprimir resultado
+document.write(texto);
+document.write("<b>Exemplo 02: Resolver equação</b><br><br>");
+var x = 10;
+var a = 1;
+var b = 5;
+var c = 6;
+var f = a*x*x+b*x+c;
+document.write(`Resultado de f(${x})=(${a})(${x})^2+(${b})(${x})+${c}=${f}`);
+document.write("<br><br><b>Exemplo 03: Imprimir os números de 1 até 10</b><br><br>");
+// Loop
+var n = 10;
+for(var i=1; i<=10; i++) {
+  document.write(i); // Imprimir o número
+  // imprimir "," entre os números
+  if (i<n) {
+    document.write(", ");
+  }
+}
+function mostrar_numeros_aleatorios() {
+  // gerar números entre 0 e 1
+  var numero_aleatorio = Math.random()*10; 
+  // apresenta popup  
+  alert(numero_aleatorio); 
+}
+</script></head>
+<body>
+<p style ="font-family:arial; color: red;">
+O trecho acima usa JavaScript.<br>
+Este texto está em <b>HTML</b> e usa <b>CSS</b>.<br>
+</p>
+<b>Exemplo 04: Chamada de função JAVASCRIPT:</b>
+<input type=button onClick="mostrar_numeros_aleatorios()" value="Gerar valores aleatórios">
+</body>
+</html>
+
